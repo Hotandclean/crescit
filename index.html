@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CRESCIT — Automated DeFi liquidity management. Your capital, always earning. Always in range. Built to compound." />
+  <meta name="theme-color" content="#0A0A0F" />
+  <meta property="og:title" content="CRESCIT — Built to compound." />
+  <meta property="og:description" content="Automated DeFi liquidity management. Your capital, always earning. Always in range." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://crescit.xyz" />
+  <title>CRESCIT — Built to compound.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- Noise texture overlay -->
+<div class="noise" aria-hidden="true"></div>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ============================================
+     NAV
+     ============================================ -->
+<nav>
+  <a href="#hero">
+    <img src="assets/crescit-logo.png" alt="CRESCIT" class="nav-logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#what-we-do">What We Do</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#chainlens">ChainLens</a></li>
+    <li><a href="https://chainlens.io" target="_blank" rel="noopener" class="nav-cta">Launch App →</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section id="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-label">
+      <div class="hero-label-dot"></div>
+      <span class="label">DeFi Liquidity Management</span>
+    </div>
+
+    <h1 class="hero-title">CRESCIT</h1>
+
+    <p class="hero-tagline">Built to <span>compound.</span></p>
+
+    <button class="hero-cta" data-scroll="#what-we-do" aria-label="Enter site">
+      Enter
+    </button>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================
+     WHAT WE DO
+     ============================================ -->
+<section id="what-we-do">
+  <div class="section-inner">
+
+    <div class="wwd-headline">
+      <div class="section-label reveal">
+        <span class="label">01 — What We Do</span>
+      </div>
+
+      <h2 class="reveal reveal-delay-1">
+        We run automated liquidity<br />
+        positions across <span class="accent">DeFi protocols.</span>
+      </h2>
+
+      <p class="reveal reveal-delay-2">
+        Your capital, always earning. Always in range.<br />
+        No manual rebalancing. No missed yield. Just compounding returns.
+      </p>
+    </div>
+
+    <div class="stats-grid">
+
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-card-glow"></div>
+        <div class="stat-value">
+          <span class="currency">$</span><span data-counter="16" data-suffix="K+">0</span>
+        </div>
+        <div class="stat-label">Assets Under Management</div>
+      </div>
+
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-card-glow"></div>
+        <div class="stat-value">
+          <span data-counter="4" data-suffix=" Active">0</span>
+        </div>
+        <div class="stat-label">Liquidity Positions</div>
+      </div>
+
+      <div class="stat-card reveal reveal-delay-4">
+        <div class="stat-card-glow"></div>
+        <div class="stat-value">
+          <span data-counter="92" data-suffix="%">0</span>
+        </div>
+        <div class="stat-label">Average Position Margin</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Gradient separator -->
+<div class="gradient-line"></div>
+
+<!-- ============================================
+     HOW IT WORKS
+     ============================================ -->
+<section id="how-it-works">
+  <div class="section-inner">
+
+    <div class="hiw-headline">
+      <div class="section-label reveal">
+        <span class="label">02 — How It Works</span>
+      </div>
+      <h2 class="reveal reveal-delay-1">Three steps.<br />Infinite yield.</h2>
+      <p class="reveal reveal-delay-2">Our engine runs 24/7 so you don't have to. From on-chain signals to reinvested fees — automated, auditable, relentless.</p>
+    </div>
+
+    <div class="steps-container">
+
+      <!-- Step 1: Monitor -->
+      <div class="step reveal reveal-delay-2">
+        <div class="step-number">
+          <span class="step-icon">⬡</span>
+        </div>
+        <h3 class="step-title">Monitor</h3>
+        <p class="step-body">
+          Every position across every chain is watched in real time. Price ranges, fee accruals, liquidity depth — nothing escapes the lens.
+        </p>
+        <span class="step-tag">On-chain signals</span>
+      </div>
+
+      <!-- Step 2: Harvest -->
+      <div class="step reveal reveal-delay-3">
+        <div class="step-number">
+          <span class="step-icon">◈</span>
+        </div>
+        <h3 class="step-title">Harvest</h3>
+        <p class="step-body">
+          When yield accumulates, the engine collects. Fees are harvested at optimal gas windows to maximize net returns.
+        </p>
+        <span class="step-tag">Auto-collect fees</span>
+      </div>
+
+      <!-- Step 3: Compound -->
+      <div class="step reveal reveal-delay-4">
+        <div class="step-number">
+          <span class="step-icon">⟳</span>
+        </div>
+        <h3 class="step-title">Compound</h3>
+        <p class="step-body">
+          Harvested yield is redeployed into the same positions. Capital compounds on itself. The loop never stops.
+        </p>
+        <span class="step-tag">Reinvest + rerange</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Gradient separator -->
+<div class="gradient-line"></div>
+
+<!-- ============================================
+     CHAINLENS
+     ============================================ -->
+<section id="chainlens">
+  <div class="section-inner">
+    <div class="chainlens-inner">
+
+      <!-- Text -->
+      <div class="chainlens-text">
+        <div class="section-label reveal">
+          <span class="label">03 — Powered by ChainLens</span>
+        </div>
+
+        <h2 class="reveal reveal-delay-1">
+          Track every position.<br />
+          Every chain.<br />
+          <span class="accent">Real-time.</span>
+        </h2>
+
+        <p class="reveal reveal-delay-2">
+          ChainLens.io is the intelligence layer behind CRESCIT. A live dashboard that surfaces position health, fee earnings, range status, and cross-chain performance — all in one place.
+        </p>
+
+        <a
+          href="https://chainlens.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="chainlens-cta reveal reveal-delay-3"
+          aria-label="Visit ChainLens.io"
+        >
+          Visit ChainLens.io
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Terminal visual -->
+      <div class="chainlens-visual reveal reveal-delay-2">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-title">chainlens.io — live positions</div>
+          </div>
+
+          <div class="terminal-body">
+
+            <div class="t-row">
+              <span class="t-chain">Arbitrum</span>
+              <span class="t-pair">WETH / GMX</span>
+              <span class="t-val">$4,877.32</span>
+              <span class="t-status in-range">
+                <span class="t-dot"></span>
+                In Range
+              </span>
+            </div>
+
+            <div class="t-row">
+              <span class="t-chain">Arbitrum</span>
+              <span class="t-pair">WETH / LINK</span>
+              <span class="t-val">$11,867.00</span>
+              <span class="t-status in-range">
+                <span class="t-dot"></span>
+                In Range
+              </span>
+            </div>
+
+            <div class="t-row">
+              <span class="t-chain">Base</span>
+              <span class="t-pair">WETH / USDC</span>
+              <span class="t-val">$2,140.55</span>
+              <span class="t-status active">
+                <span class="t-dot"></span>
+                Active
+              </span>
+            </div>
+
+            <div class="t-row">
+              <span class="t-chain">Base</span>
+              <span class="t-pair">WETH / cbBTC</span>
+              <span class="t-val">$1,890.10</span>
+              <span class="t-status active">
+                <span class="t-dot"></span>
+                Active
+              </span>
+            </div>
+
+          </div>
+
+          <div class="terminal-footer">
+            <span>4 positions · 2 chains</span>
+            <span class="t-live">
+              <span class="t-dot"></span>
+              LIVE
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     EARLY ACCESS CTA
+     ============================================ -->
+<section id="early-access">
+  <div class="section-inner">
+    <div class="cta-wrapper">
+
+      <!-- Left: Copy -->
+      <div class="cta-copy">
+        <div class="section-label reveal">
+          <span class="label">04 — Early Access</span>
+        </div>
+
+        <h2 class="cta-headline reveal reveal-delay-1">
+          Put Your Capital<br />
+          <span class="accent">to Work.</span>
+        </h2>
+
+        <p class="cta-sub reveal reveal-delay-2">
+          Sign up for early access to automated LP management. We'll show you exactly what your capital could be earning.
+        </p>
+
+        <ul class="cta-benefits reveal reveal-delay-3">
+          <li>
+            <span class="benefit-icon">⬡</span>
+            Free portfolio analysis
+          </li>
+          <li>
+            <span class="benefit-icon">◈</span>
+            Projected yield report for your capital
+          </li>
+          <li>
+            <span class="benefit-icon">⟳</span>
+            Early access to <a href="https://chainlens.io" target="_blank" rel="noopener" class="accent-link">ChainLens dashboard</a>
+          </li>
+          <li>
+            <span class="benefit-icon">✦</span>
+            Priority onboarding when we open new positions
+          </li>
+        </ul>
+
+        <div class="cta-social-proof reveal reveal-delay-4">
+          <span class="proof-dot"></span>
+          $19K+ AUM &nbsp;·&nbsp; 5 Active Positions &nbsp;·&nbsp; 100%+ APY on select pairs
+        </div>
+      </div>
+
+      <!-- Right: Form card -->
+      <div class="cta-form-card reveal reveal-delay-2">
+        <div class="cta-form-glow"></div>
+
+        <!-- Form state -->
+        <form id="cta-form" class="cta-form" novalidate>
+          <h3 class="form-title">Get Your Free Yield Report</h3>
+
+          <div class="form-group">
+            <label for="cta-name">Your Name</label>
+            <input
+              type="text"
+              id="cta-name"
+              name="name"
+              placeholder="Alex Rivera"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cta-email">Email Address</label>
+            <input
+              type="email"
+              id="cta-email"
+              name="email"
+              placeholder="alex@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cta-capital">Capital to Deploy</label>
+            <div class="select-wrapper">
+              <select id="cta-capital" name="capital" required>
+                <option value="" disabled selected>How much are you looking to deploy?</option>
+                <option value="under-10k">Under $10K</option>
+                <option value="10k-50k">$10K – $50K</option>
+                <option value="50k-100k">$50K – $100K</option>
+                <option value="100k-plus">$100K+</option>
+              </select>
+              <span class="select-arrow">▾</span>
+            </div>
+          </div>
+
+          <button type="submit" class="cta-submit-btn">
+            Get My Yield Report
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Success state (hidden by default) -->
+        <div id="cta-success" class="cta-success" aria-live="polite" hidden>
+          <div class="success-icon">✦</div>
+          <h3 class="success-title">You're on the list.</h3>
+          <p class="success-body">We'll send your projected yield report within 48 hours. Keep an eye on your inbox.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gradient separator -->
+<div class="gradient-line"></div>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer>
+  <div class="footer-inner">
+
+    <a href="https://crescit.xyz" target="_blank" rel="noopener noreferrer">
+      <img src="assets/crescit-logo.png" alt="CRESCIT" class="footer-logo" />
+    </a>
+
+    <ul class="footer-links">
+      <li>
+        <a href="https://crescit.xyz" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/>
+            <ellipse cx="7" cy="7" rx="2.5" ry="6" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M1 7H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          crescit.xyz
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/crescit2grow" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M4.5 6V10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M4.5 4.5V4.51" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M7 10V7.5C7 6.67 7.67 6 8.5 6C9.33 6 10 6.67 10 7.5V10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://chainlens.io" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 1L13 4V10L7 13L1 10V4L7 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+          ChainLens
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Crescit. All rights reserved.</span>
+      <span class="footer-tagline">crescit — it grows.</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Script -->
+<script src="assets/script.js" defer></script>
+
+</body>
+</html>
